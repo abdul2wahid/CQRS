@@ -1,0 +1,38 @@
+﻿@model List<NOSQL_Read_Project.ReadModel.UsersReadModel>
+@{
+    ViewBag.Title = "Admin";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>User Accounts</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th></th>
+          
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var m in Model)
+        {
+        <tr>
+            <td>@m.Name</td>
+            <td>@m.Email</td>
+
+            <td>
+
+                @*{
+                using (Html.BeginForm("Update", "Home", new { NotificationId = m.NotificationId }, FormMethod.Post))
+                {
+                <input type="submit" value="Update" />
+                }
+            }*@
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>
+<hr />
+@Html.ActionLink("Create New User", "NewUser")

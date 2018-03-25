@@ -1,0 +1,15 @@
+﻿@model List<NOSQL_Read_Project.ReadModel.UsersReadModel>
+@{
+    ViewBag.Title = "Admin";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class='notification'>
+    <ul>
+        @foreach (var item in Model)
+    {
+        <li>@item.Name</li>
+        <li>@item.Email</li>
+}
+    </ul>
+</div>

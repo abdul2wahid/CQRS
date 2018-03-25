@@ -1,0 +1,43 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+   
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile></DocumentationFile>
+  </PropertyGroup>
+
+
+
+  <ItemGroup>
+    <PackageReference Include="Honeywell.RabbitMQ" Version="1.0.0" />
+    <PackageReference Include="MongoDB.Driver" Version="2.5.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="9.0.1" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+  <Folder Include="Commands\ICommand\" />
+  <Folder Include="Commands\CommandHandlers\" />
+  <Folder Include="Commands\Commands\" />
+    <Folder Include="Configuration\" />
+    <Folder Include="Domain\" />
+    <Folder Include="Framework\" />
+    <Folder Include="WriteModel\" />
+  </ItemGroup>
+
+
+
+  <ItemGroup>
+    <Compile Include="Commands\CommandHandlers\.*cs" />
+  </ItemGroup>
+
+
+
+  <ItemGroup>
+    <ProjectReference Include="..\Events_Project\Events_Project.csproj" />
+  </ItemGroup>
+
+</Project>
