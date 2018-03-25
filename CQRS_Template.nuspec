@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Honeywell.CQRS</id>
+    <version>1.0.0</version>
+    <authors>Honeywell</authors>
+    <owners>Honeywell.Homes</owners>
+    <licenseUrl>hhtp:Honeywell.com</licenseUrl>
+    <projectUrl>hhtp:Honeywell.com</projectUrl>
+    <iconUrl>hhtp:Honeywell.com</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Package description</description>
+    <releaseNotes>Summary of changes made in this release of the package.</releaseNotes>
+    <copyright>Copyright 2018</copyright>
+    <tags>Tag1 Tag2</tags>
+    <dependencies>
+      <dependency id="SampleDependency" version="1.0" />
+    </dependencies>
+ <packageTypes>
+            <packageType name="CQRS_Template" />
+        </packageTypes>
+  </metadata>
+</package>
