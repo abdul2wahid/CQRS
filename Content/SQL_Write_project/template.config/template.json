@@ -1,7 +1,7 @@
 {
 "author": "ClassLibrary6",
 "classifications": [ "Class Library" ],
-"name": "Honeywell.CQRS",
+"name": "CQRS",
 "identity": "ClassLibrary6",        // Unique name for this template
 "shortName": "CQRS",                 // Short name that can be used on the cli
 "tags": {
