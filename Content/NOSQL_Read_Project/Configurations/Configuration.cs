@@ -1,13 +1,15 @@
 ﻿using Events_Project.Events;
-using Honeywell.RabbitMQ;
+
 using NOSQL_Read_Project.Bus;
 using NOSQL_Read_Project.Events;
 using NOSQL_Read_Project.ReadModel;
-using RabbitMQ.Client.Events;
+
 using System;
 using System.Collections.Generic;
 using System.Text;
 using Newtonsoft.Json;
+using RabbitMQFactory;
+using RabbitMQ.Client.Events;
 
 namespace NOSQL_Read_Project.Configurations
 {

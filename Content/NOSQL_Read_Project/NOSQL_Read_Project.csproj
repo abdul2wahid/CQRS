@@ -5,13 +5,19 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Honeywell.RabbitMQ" Version="1.0.0" />
     <PackageReference Include="MongoDB.Driver" Version="2.5.0" />
     <PackageReference Include="Newtonsoft.Json" Version="11.0.1" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\RabbitMQFactory\RabbitMQFactory.csproj" />
     <ProjectReference Include="..\Events_Project\Events_Project.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="RabbitMQ.Client">
+      <HintPath>..\..\RabbitMQFactory\bin\Debug\RabbitMQ.Client.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>

@@ -7,9 +7,9 @@ using System.Text;
 using CQRS.Bus;
 using CQRS.Commands;
 using CQRS.Exceptions;
-using Honeywell.RabbitMQ;
-using Newtonsoft.Json;
 
+using Newtonsoft.Json;
+using RabbitMQFactory;
 
 namespace CQRS.Repository
 {
